@@ -1,6 +1,6 @@
 import java.util.Arrays;
    public class MyArrayList<T> {
-       private Object[] elements;
+       private final Object[] elements;
        private int size;
 
        public MyArrayList() {

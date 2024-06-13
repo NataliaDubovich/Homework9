@@ -1,9 +1,7 @@
-
 public class Main {
     public static void main(String[] args) {
-//        String [] elements = {"first", "second", "third"};
-        MyArrayList myArrayList = new MyArrayList();
-//        myArrayList.listArray(elements);
+        MyArrayList<String> myArrayList = new MyArrayList<>();
+
         myArrayList.add("first");
         myArrayList.add("second");
         myArrayList.add("third");
@@ -75,13 +73,11 @@ public class Main {
         myHashMap.put("Hello", "World");
         myHashMap.put("Hey", "Everyone");
         myHashMap.put("Hi", "all");
-//            myHashMap.put(null, "Here key is null");
 
 
         System.out.println(myHashMap.get("Hello"));
         System.out.println(myHashMap.get("Hey"));
         System.out.println(myHashMap.get("Hi"));
-//            System.out.println(myHashMap.get("null"));
 
         System.out.println("Size: " + myHashMap.size()); // Output: 3
         System.out.println("Value for 'Hey': " + myHashMap.get("Hey")); // Output: 2
@@ -91,16 +87,7 @@ public class Main {
         myHashMap.clear();
         System.out.println("Size after clear: " + myHashMap.size()); // Output: 0
 
-
-//           for (Map.Entry<String, String> entry : myHashMap.entrySet()){
-//                System.out.println(entry.getKey());
-//                System.out.println(entry.getValue());
-//                System.out.println("________________________");
-
-
     }
-
-
 }
 
 

@@ -16,12 +16,13 @@ public class MyLinkedList<T> {
         }
         size++;
     }
-    public T get(int index){
+
+    public T get(int index) {
         Objects.checkIndex(index, size);
-Node <T> current = head;
+        Node<T> current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
-            
+
         }
         return current.element;
     }
@@ -35,6 +36,7 @@ Node <T> current = head;
             this.element = element;
         }
     }
+
     public void remove(int index) {
         if (index >= size || index < 0) {
             throw new IndexOutOfBoundsException("Index: " + index + ", Size: " + size);
@@ -52,11 +54,13 @@ Node <T> current = head;
         }
         size--;
     }
+
     public void clear() {
         head = null;
         tail = null;
         size = 0;
     }
+
     public int size() {
         return size;
     }
